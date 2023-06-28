@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function getBookInfo(id) {
+        fetch(`https://example.com/books/${id}`)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(`Book Title: ${data.title}`);
+            console.log(`Author: ${data.author}`);
+          });
+      }
+
+      getBookInfo();
+    </script>
+  </body>
+</html>
+
+<!-- Fix the mistake -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function calculateTotal(items) {
+        let total = 0;
+
+        for (let i = 0; i < items.length; i++) {
+          total += items[i].price;
+        }
+
+        console.log(`Total: ${total}`);
+      }
+
+      let shoppingCart = [
+        { name: "Apple", price: 0.5 },
+        { name: "Orange", price: 0.35 },
+        { name: "Milk", price: "1.15" },
+        { name: "Bread", price: "1.50" },
+      ];
+
+      calculateTotal(shoppingCart);
+    </script>
+  </body>
+</html>
+
+<!-- fix the mistake -->
